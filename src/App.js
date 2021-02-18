@@ -59,7 +59,9 @@ function App() {
                 <span
                   role="img"
                   aria-label=""
-                  onClick={() => dispatch({ type: DEL, payload: toDo.id })}
+                  onClick={() => {
+                    dispatch({ type: DEL, payload: toDo.id });
+                  }}
                 >
                   ❌
                 </span>
